@@ -1,0 +1,25 @@
+.page.theme_light {
+  --theme-color: var(--light-white);
+  --main-color: var(--light-quiet);  /* название сайта */
+  --accent-color: var(--light-pink);  /* цвет подложки в заголовках */
+  --decorate-color: var(--light-black);  /*цвет текста */
+  --additional-color: var(--light-black);  /*цвет меню и заголовков  */
+  --additional-color-opasity-40: var(--light-black-opasity-40);
+  --page-background-image: url("../images/cover-image-light.png");
+
+  --header__rec-icon-visibility: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+:root {
+  --theme-color: var(--light-white);
+  --main-color: var(--light-quiet);  /* название сайта */
+  --accent-color: var(--light-pink);  /* цвет подложки в заголовках */
+  --decorate-color: var(--light-black);  /*цвет текста */
+  --additional-color: var(--light-black);  /*цвет меню и заголовков  */
+  --additional-color-opasity-40: var(--light-black-opasity-40);
+  --page-background-image: url("../images/cover-image-light.png");
+
+  --header__rec-icon-visibility: hidden;
+  }
+}

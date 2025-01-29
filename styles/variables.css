@@ -1,0 +1,23 @@
+:root {
+  
+  --dark-black: #000028;
+  --dark-pink: #DB00FF;
+  --dark-red: #FF0070;
+  --dark-red-opasity-40: #FF007040;
+  --dark-quiet: #F1B2CE;
+  
+  --light-white: #ffffff;
+  --light-quiet: #FFC2E6;
+  --light-pink: #FF8DCB;
+  --light-black: #353430;
+  --light-black-opasity-40: #35343040;
+
+
+  --theme-color: var(--dark-black);
+  --main-color: var(--dark-pink);   /* название сайта */
+  --accent-color: var(--dark-red); /* цвет подложки в заголовках */
+  --additional-color: var(--dark-red); /* цвет  меню и заголоаков */
+  --additional-color-opasity-40: var(--dark-red-opasity-40);
+  --decorate-color: var(--dark-quiet); /*цвет текста */
+  --page-background-image: url("../images/cover-image-dark.png");
+} 

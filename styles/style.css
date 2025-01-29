@@ -1,0 +1,198 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  background-color: var(--theme-color);
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+  line-height: 23.4px;
+  background-image: var(--page-background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.header {
+  padding: 75px 10px 65px;
+  position: relative;
+}
+
+.header::before, .footer::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--additional-color);
+  border-right: 1px solid var(--additional-color);
+}
+
+.header::after, .footer::after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--additional-color);
+  border-left: 1px solid var(--additional-color);
+}
+
+.header__rec-icon {
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  color: var(--additional-color);
+  display: flex;
+  align-items: center;
+  visibility: var(--header__rec-icon-visibility);
+}
+
+.header__rec-icon::before {
+  content: 'REC';
+  line-height: 25px;
+}
+
+.header__rec-icon::after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin-left: 9px;
+  background-color: var(--additional-color);
+  border-radius: 50px;
+  box-shadow: 0px 0px 4px 2px var(--additional-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: var(--additional-color);
+  line-height: 18px;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--additional-color-opasity-40);
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--additional-color-opasity-40);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--additional-color);
+  pointer-events: none;
+}
+
+.header__heading {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--main-color);
+  text-shadow: 4px 4px var(--accent-color);
+  margin-block-start: 65px;
+  margin-block-end: 55px;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  font-weight: bold;
+  letter-spacing: 0px;
+  font-size: 18px;
+}
+
+.main {
+  margin-block-start: 40px;
+  margin-block-end: 40px;
+  padding: 0px 10px;
+  display: grid;
+  gap: 50px;
+}
+
+.text-decor {
+  color: var(--decorate-color);
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+
+.title-list-decor {
+  background-color: var(--accent-color);
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+.info-box__title {
+  color: var(--additional-color);
+  font-weight: bold;
+  letter-spacing: 0px;
+  font-size: 18px;
+}
+
+.list__title {
+  margin-block-start: 20px;
+}
+
+.article__title {
+  margin: 20px 0 10px;
+}
+
+.content-link {
+  color: var(--decorate-color);
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.content-link:hover {
+  text-decoration: underline;
+
+}
+
+.content-link:focus {
+  outline: 1px solid var(--decorate-color);
+}
+
+.gallery__title {
+  margin-bottom: 10px;
+}
+
+.gallery-list {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery-list__item-img {
+  width: 100%;
+}
+
+.footer {
+  min-height: 670px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title {
+  font-size: 116px;
+  line-height: 82.5%;
+  font-weight: bold;
+  color: var(--main-color);
+  text-shadow: 2px 2px var(--accent-color);
+
+}

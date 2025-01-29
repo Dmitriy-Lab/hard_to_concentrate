@@ -1,0 +1,24 @@
+.page.theme_dark {
+  --theme-color: var(--dark-black);
+  --main-color: var(--dark-pink);   
+  --accent-color: var(--dark-red); 
+  --additional-color: var(--dark-red); 
+  --decorate-color: var(--dark-quiet); 
+  --additional-color-opasity-40: var(--dark-red-opasity-40);
+  --page-background-image: url("../images/cover-image-dark.png");
+
+  --header__rec-icon-visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color: var(--dark-black);
+    --main-color: var(--dark-pink);   
+    --accent-color: var(--dark-red); 
+    --additional-color: var(--dark-red); 
+    --decorate-color: var(--dark-quiet);
+    --additional-color-opasity-40: var(--dark-red-opasity-40);
+    --page-background-image: url("../images/cover-image-dark.png");
+    --header__rec-icon-visibility: visible;
+  }
+}
