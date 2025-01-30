@@ -19,6 +19,7 @@
     --decorate-color: var(--dark-quiet);
     --additional-color-opasity-40: var(--dark-red-opasity-40);
     --page-background-image: url("../images/cover-image-dark.png");
+    
     --header__rec-icon-visibility: visible;
   }
 }

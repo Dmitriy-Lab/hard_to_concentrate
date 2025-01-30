@@ -14,10 +14,10 @@
 
 
   --theme-color: var(--dark-black);
-  --main-color: var(--dark-pink);   /* название сайта */
-  --accent-color: var(--dark-red); /* цвет подложки в заголовках */
-  --additional-color: var(--dark-red); /* цвет  меню и заголоаков */
+  --main-color: var(--dark-pink); 
+  --accent-color: var(--dark-red); 
+  --additional-color: var(--dark-red);
   --additional-color-opasity-40: var(--dark-red-opasity-40);
-  --decorate-color: var(--dark-quiet); /*цвет текста */
+  --decorate-color: var(--dark-quiet); 
   --page-background-image: url("../images/cover-image-dark.png");
 } 
